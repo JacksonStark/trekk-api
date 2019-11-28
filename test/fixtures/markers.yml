@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  marker_image: 
+  spawned_description: 
+  spawned_image: 
+  spawned_video: MyString
+
+two:
+  marker_image: 
+  spawned_description: 
+  spawned_image: 
+  spawned_video: MyString
