@@ -2,8 +2,8 @@ class MarkersController < ApplicationController
 
   def create
     marker = Marker.new(marker_params)
-    savedMarker = marker.save
-    render :json => { bool: savedMarker }
+    saved_marker = marker.save
+    render :json => { bool: saved_marker, marker: marker }
   end
 
   def show
