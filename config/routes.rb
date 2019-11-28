@@ -14,7 +14,9 @@ Rails.application.routes.draw do
 
   get '/markers/create' => 'markers#create'
 
-  get '/markers' => 'markers#show'
+  get '/markers/' => 'markers#show_all'
+
+  get '/markers/:trekk_id' => 'markers#show'
 
   get '/test' => 'users#test'
 

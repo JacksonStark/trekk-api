@@ -7,6 +7,11 @@ class MarkersController < ApplicationController
   end
 
   def show
+    markers = Marker.where(trekk_id: params[:trekk_id])
+    render :json => { markers: markers }
+  end
+
+  def show_all
     markers = Marker.all
     render :json => { markers: markers }
   end
