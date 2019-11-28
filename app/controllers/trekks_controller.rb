@@ -5,7 +5,7 @@ class TrekksController < ApplicationController
     trekk.access_code = SecureRandom.hex(3)
     trekk.save
   end
-  
+
   def show
     trekks = Trekk.where(user_id: params[:user_id])
     render :json => { trekks: trekks }
