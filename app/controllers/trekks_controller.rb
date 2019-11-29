@@ -7,7 +7,7 @@ class TrekksController < ApplicationController
     trekk.save
     created_trekk = Trekk.find_by(access_code: access_code)
 
-    render :json => { trekk_id: created_trekk.id }
+    render :json => { trekk_id: created_trekk.id, name: created_trekk.name }
   end
 
   # def update 
