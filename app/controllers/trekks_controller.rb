@@ -25,6 +25,12 @@ class TrekksController < ApplicationController
     render :json => { trekks: trekks }
   end
 
+  def delete
+    deletedTrekk = Trekk.find_by(id: params[:trekk_id]).destroy
+    trekks = Trekk.where(user_id: params[:user_id])
+    render :json => { trekks: trekks }
+  end
+
 
   private
 
