@@ -3,7 +3,7 @@ class MarkersController < ApplicationController
   def create
     marker = Marker.new(marker_params)
     saved_marker = marker.save
-    markers = Marker.where(params[:trekk_id])
+    markers = Marker.where(trekk_id: params[:trekk_id])
     render :json => { bool: saved_marker, markers: markers }
   end
 
