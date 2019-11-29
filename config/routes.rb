@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   # TREKKS
   get '/trekks' => 'trekks#show_all'
   get '/trekks/:user_id' => 'trekks#show'
-  get '/trekks/create' => 'trekks#create'
+  post '/trekks/create' => 'trekks#create'
 
   # MARKERS
   get '/markers/' => 'markers#show_all'
