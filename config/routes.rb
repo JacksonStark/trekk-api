@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   # USER/REGISTER
   get '/users' => 'users#show'
-  get '/users/create' => 'users#create'
+  post '/users/create' => 'users#create'
 
   # LOGIN
   get '/sessions/create' => 'sessions#create'
