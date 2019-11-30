@@ -31,6 +31,12 @@ class TrekksController < ApplicationController
     render :json => { trekks: trekks }
   end
 
+  def guest
+    trekk = Trekk.find_by(access_code: params[:access_code])
+    markers = Marker.where(trekk_id: trekk.id)
+    render :json => { markers: markers }
+  end
+
 
   private
 

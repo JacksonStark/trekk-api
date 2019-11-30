@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   # TREKKS
   get '/trekks' => 'trekks#show_all'
   get '/trekks/:user_id' => 'trekks#show'
+  get '/trekks/guest/:access_code' => 'trekks#guest'
   post '/trekks/create' => 'trekks#create'
   delete '/trekks' => 'trekks#delete'
 
