@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   delete '/trekks' => 'trekks#delete'
 
   # MARKERS
-  get '/markers/' => 'markers#show_all'
+  get '/markers' => 'markers#show_all'
   get '/markers/:trekk_id' => 'markers#show'
   post '/markers/create' => 'markers#create'
 

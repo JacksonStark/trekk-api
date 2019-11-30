@@ -1,18 +1,20 @@
 class UsersController < ApplicationController
+
   def create
     user = User.new(user_params)
-    saved_user = user.save
-    render :json => { bool: saved_user}
+    user.save
+    registered_user = User.find_by(email: params[:email])
+    render :json => { user_id: registered_user.id}
   end
 
-   def show
+  def show
     users = User.all
     render :json => { users: users }
-   end
+  end
 
-   def test
+  def test
     render :json => { bool: true }
-   end
+  end
 
   private
 
