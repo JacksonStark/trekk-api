@@ -2,9 +2,15 @@ class UsersController < ApplicationController
 
   def create
     user = User.new(user_params)
-    user.save
+    saved_user = user.save
     registered_user = User.find_by(email: params[:email])
-    render :json => { user_id: registered_user.id}
+
+    if saved_user
+      render :json => { user_id: registered_user.id }
+    else
+      render :json => { user_id: nil}
+    end
+
   end
 
   def show
