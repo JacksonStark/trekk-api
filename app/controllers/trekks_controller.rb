@@ -34,8 +34,15 @@ class TrekksController < ApplicationController
 
   def guest
     trekk = Trekk.find_by(access_code: params[:access_code])
-    markers = Marker.where(trekk_id: trekk.id)
-    render :json => { markers: markers }
+
+    if trekk 
+      markers = Marker.where(trekk_id: trekk.id)
+      render :json => { markers: markers }
+    else
+      render :json => { markers: nil }
+    end
+
+    
   end
 
 
