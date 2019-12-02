@@ -20,7 +20,7 @@ class MarkersController < ApplicationController
   def delete
     Marker.find_by(id: params[:marker_id]).destroy
     # SEND ALL MARKERS (UPDATED) BACK
-    markers = Marker.where(user_id: params[:user_id])
+    markers = Marker.where(trekk_id: params[:trekk_id])
     render :json => { markers: markers }
   end
 
