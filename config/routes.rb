@@ -18,6 +18,8 @@ Rails.application.routes.draw do
   get '/markers' => 'markers#show_all'
   get '/markers/:trekk_id' => 'markers#show'
   post '/markers/create' => 'markers#create'
+  delete '/markers' => 'trekks#delete'
+
 
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
