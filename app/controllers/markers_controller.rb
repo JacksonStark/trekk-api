@@ -18,9 +18,10 @@ class MarkersController < ApplicationController
   end
 
   def delete
-    deletedMarker = Trekk.find_by(id: params[:marker_id]).destroy
-    markers = Trekk.where(user_id: params[:user_id])
-    render :json => { trekks: markerds }
+    Marker.find_by(id: params[:marker_id]).destroy
+    # SEND ALL MARKERS (UPDATED) BACK
+    markers = Marker.where(user_id: params[:user_id])
+    render :json => { trekks: markers }
   end
 
   private

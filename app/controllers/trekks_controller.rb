@@ -26,7 +26,8 @@ class TrekksController < ApplicationController
   end
 
   def delete
-    deletedTrekk = Trekk.find_by(id: params[:trekk_id]).destroy
+    Trekk.find_by(id: params[:trekk_id]).destroy
+    # SEND ALL TREKKS (UPDATED) BACK
     trekks = Trekk.where(user_id: params[:user_id])
     render :json => { trekks: trekks }
   end
