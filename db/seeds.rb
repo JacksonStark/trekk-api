@@ -104,3 +104,10 @@ trekk3.markers.create(
   spawned_image: 'https://i0.wp.com/fanfest.com/wp-content/uploads/2017/08/Pokemon-Legendary-Beasts.png?fit=1244%2C766',
   spawned_video: ''
 )
+
+trekk3.markers.create(
+  marker_image: 'https://superawesomevectors.com/wp-content/uploads/2017/05/pikachu-pokemon-vector-800x566.jpg',
+  spawned_description: '',
+  spawned_image: 'https://static.pokemonpets.com/images/monsters-images-800-800/26-Raichu.png',
+  spawned_video: 'https://v.ftcdn.net/01/17/73/42/700_F_117734269_95KwuE6K0lpZZASDaqo7eNx3PhF4Y1EX_ST.mp4'
+)
