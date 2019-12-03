@@ -12,7 +12,7 @@
 
 user1 = User.find_or_create_by! email: 'jacksonstark77@hotmail.com', password: 'beach'
 user2 = User.find_or_create_by! email: 'adamleseur@gmail.com', password: 'housewives'
-user3 = User.find_or_create_by! email: 'frankzou2000@hotmail.com', password: 'eragon'
+user3 = User.find_or_create_by! email: 'frankzou2000@hotmail.com', password: 'pokemon'
 
 # Trekk.destroy_all
 
@@ -27,17 +27,17 @@ user2.trekks.create(
 )
 
 user3.trekks.create(
-  name: 'Books',
+  name: 'Pokemon',
   access_code: 'zxcvbn'
 )
 
 trekk1 = Trekk.find_by(name: 'Ocean Views')
 trekk2 = Trekk.find_by(name: 'Best sex shops')
-trekk3 = Trekk.find_by(name: 'Books')
+trekk3 = Trekk.find_by(name: 'Pokemon')
 
 trekk1.markers.create(
   marker_image: 'https://img.ev.mu/images/regions/91/600x400/91.jpg',
-  spawned_description: "This is Guadalupe. TITS",
+  spawned_description: "This is Guadalupe.",
   spawned_image: '',
   spawned_video: ''
 )
@@ -56,6 +56,20 @@ trekk1.markers.create(
   spawned_video: 'https://v.ftcdn.net/02/29/37/75/700_F_229377542_Y4dQ5kuAj6FPafId0XIdZ9jKcDQykYF8_ST.mp4'
 )
 
+trekk1.markers.create(
+  marker_image: 'https://img.pokemondb.net/artwork/large/charizard-mega-y.jpg',
+  spawned_description: 'POKEMON EVOLUTIONSSSSS',
+  spawned_image: 'http://static.pokemonpets.com/images/monsters-images-800-800/81-Magnemite.png',
+  spawned_video: 'https://v.ftcdn.net/02/29/37/75/700_F_229377542_Y4dQ5kuAj6FPafId0XIdZ9jKcDQykYF8_ST.mp4'
+)
+
+trekk1.markers.create(
+  marker_image: 'https://img.pokemondb.net/artwork/large/charizard-mega-y.jpg',
+  spawned_description: 'POKEMON EVOLUTIONSSSSS',
+  spawned_image: 'http://static.pokemonpets.com/images/monsters-images-800-800/81-Magnemite.png',
+  spawned_video: 'https://v.ftcdn.net/02/29/37/75/700_F_229377542_Y4dQ5kuAj6FPafId0XIdZ9jKcDQykYF8_ST.mp4'
+)
+
 trekk2.markers.create(
   marker_image: 'https://img.ev.mu/images/regions/91/600x400/91.jpg',
   spawned_description: 'WOW',
@@ -71,15 +85,22 @@ trekk2.markers.create(
 )
 
 trekk3.markers.create(
-  marker_image: 'https://img.ev.mu/images/regions/91/600x400/91.jpg',
-  spawned_description: 'HELLO',
-  spawned_image: '',
+  marker_image: 'https://i.imgur.com/1jBybmE.png',
+  spawned_description: 'The Pokemon Tour',
+  spawned_image: 'https://techgirl.co.za/wp-content/uploads/2016/07/maxresdefault-1-1080x675.jpg',
   spawned_video: ''
 )
 
 trekk3.markers.create(
-  marker_image: 'https://img.ev.mu/images/attractions/1336/600x400/1851.jpg',
-  spawned_description: 'WORLD',
-  spawned_image: '',
+  marker_image: 'https://superawesomevectors.com/wp-content/uploads/2017/05/pikachu-pokemon-vector-800x566.jpg',
+  spawned_description: 'Pika Pi Pika',
+  spawned_image: 'https://static.pokemonpets.com/images/monsters-images-800-800/26-Raichu.png',
+  spawned_video: 'https://ak9.picdn.net/shutterstock/videos/1011264119/preview/stock-footage-yokohama-japan-pikachu-parade-at-yokohama-pokemon-outbreak-festival-yearly-event-in.webm'
+)
+
+trekk3.markers.create(
+  marker_image: 'https://cdn.bulbagarden.net/upload/thumb/f/f9/244Entei.png/250px-244Entei.png',
+  spawned_description: '',
+  spawned_image: 'https://i0.wp.com/fanfest.com/wp-content/uploads/2017/08/Pokemon-Legendary-Beasts.png?fit=1244%2C766',
   spawned_video: ''
 )
