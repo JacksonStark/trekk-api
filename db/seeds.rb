@@ -95,7 +95,7 @@ trekk3.markers.create(
   marker_image: 'https://superawesomevectors.com/wp-content/uploads/2017/05/pikachu-pokemon-vector-800x566.jpg',
   spawned_description: 'Pika Pi Pika',
   spawned_image: 'https://static.pokemonpets.com/images/monsters-images-800-800/26-Raichu.png',
-  spawned_video: 'https://ak9.picdn.net/shutterstock/videos/1011264119/preview/stock-footage-yokohama-japan-pikachu-parade-at-yokohama-pokemon-outbreak-festival-yearly-event-in.webm'
+  spawned_video: 'https://v.ftcdn.net/01/17/73/42/700_F_117734269_95KwuE6K0lpZZASDaqo7eNx3PhF4Y1EX_ST.mp4'
 )
 
 trekk3.markers.create(
