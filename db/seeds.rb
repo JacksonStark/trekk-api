@@ -17,97 +17,78 @@ user3 = User.find_or_create_by! email: 'frankzou2000@hotmail.com', password: 'po
 # Trekk.destroy_all
 
 user1.trekks.create(
-  name: 'Ocean Views',
+  name: 'Lighthouse Tour',
   access_code: 'qwerty'
 )
 
-user2.trekks.create(
-  name: 'Best sex shops',
-  access_code: 'asdfgh'
-)
-
-user3.trekks.create(
-  name: 'Pokemon',
+user1.trekks.create(
+  name: 'Scavenger Hunt',
   access_code: 'zxcvbn'
 )
 
-trekk1 = Trekk.find_by(name: 'Ocean Views')
-trekk2 = Trekk.find_by(name: 'Best sex shops')
-trekk3 = Trekk.find_by(name: 'Pokemon')
+user1.trekks.create(
+  name: 'Art Gallery',
+  access_code: 'asdfgh'
+)
+
+user1.trekks.create(
+  name: 'Convention Center',
+  access_code: 'jdushd'
+)
+
+user1.trekks.create(
+  name: 'Mall Tour',
+  access_code: 'jaivdh'
+)
+
+trekk1 = Trekk.find_by(name: 'Lighthouse Tour')
 
 trekk1.markers.create(
-  marker_image: 'https://img.ev.mu/images/regions/91/600x400/91.jpg',
-  spawned_description: "This is Guadalupe.",
-  spawned_image: '',
+  marker_image: 'https://i.ibb.co/4Kpx8qC/trekk-Marker1.png',
+  spawned_description: "Have some fun in the Rainbow Room, where you'll often find project teams planning and presenting.",
+  spawned_image: 'https://www.journeymexico.com/project-team?showimg_aldggj=project+team.jpg',
   spawned_video: ''
 )
 
 trekk1.markers.create(
-  marker_image: 'https://img.ev.mu/images/attractions/1336/600x400/1851.jpg',
-  spawned_description: '',
+  marker_image: 'https://i.ibb.co/vVfTLdQ/trekk-Marker2.png',
+  spawned_description: 'Welcome to our lounge, where students and alumni come to hit pause on their busy lives and take it easy.',
   spawned_image: "http://static.pokemonpets.com/images/monsters-images-800-800/81-Magnemite.png",
   spawned_video: ''
 )
 
 trekk1.markers.create(
-  marker_image: 'https://www.kitchentreaty.com/wp-content/uploads/2017/02/how-to-make-heart-shaped-pizzas-featured-660x430.jpg',
-  spawned_description: '',
-  spawned_image: '',
-  spawned_video: 'https://v.ftcdn.net/02/29/37/75/700_F_229377542_Y4dQ5kuAj6FPafId0XIdZ9jKcDQykYF8_ST.mp4'
+  marker_image: 'https://i.ibb.co/4sJJsRj/trekk-Marker3.png',
+  spawned_description: "This is our coffee machine. Arguably the heart of Lighthouse Labs. Don't be shy, drink some Chai.",
+  spawned_image: 'https://www.betterhealthforwomen.com/wp-content/uploads/2019/02/china-coffee-cup.jpg',
+  spawned_video: ''
+)
+
+trekk3.markers.create(
+  marker_image: 'https://i.ibb.co/cCKYQnr/trekk-Marker4.png',
+  spawned_description: "This is what we call... The Other Side. It is leased by other tech companies of many varieties.",
+  spawned_image: 'https://wheretogoin.net/wp-content/uploads/2019/04/there-are-two-sides-to-every-story-e1554505904383.jpg',
+  spawned_video: ''
 )
 
 trekk1.markers.create(
-  marker_image: 'https://img.pokemondb.net/artwork/large/charizard-mega-y.jpg',
-  spawned_description: 'POKEMON EVOLUTIONSSSSS',
-  spawned_image: 'http://static.pokemonpets.com/images/monsters-images-800-800/81-Magnemite.png',
-  spawned_video: 'https://v.ftcdn.net/02/29/37/75/700_F_229377542_Y4dQ5kuAj6FPafId0XIdZ9jKcDQykYF8_ST.mp4'
+  marker_image: 'https://i.ibb.co/frkss4b/trekk-Marker5.png',
+  spawned_description: "If you're unsure how to use these modernized elevators, don't worry! They're smarter than you think!",
+  spawned_image: 'https://geekologie.com/2015/08/10/personal-home-elevat0r.jpg',
+  spawned_video: ''
 )
 
 trekk1.markers.create(
-  marker_image: 'https://img.pokemondb.net/artwork/large/charizard-mega-y.jpg',
-  spawned_description: 'POKEMON EVOLUTIONSSSSS',
-  spawned_image: 'http://static.pokemonpets.com/images/monsters-images-800-800/81-Magnemite.png',
-  spawned_video: 'https://v.ftcdn.net/02/29/37/75/700_F_229377542_Y4dQ5kuAj6FPafId0XIdZ9jKcDQykYF8_ST.mp4'
-)
+  marker_image: 'https://i.ibb.co/cCpPcvW/trekk-Marker6.png',
+  spawned_description: 'Here we have Nima, lover of Kanye and turtlenecks',
+  spawned_image: 'https://images.glaciermedia.ca/polopoly_fs/1.416929.1374534817!/fileImage/httpImage/image.jpg_gen/derivatives/landscape_804/img-0-6264716-jpg.jpg',
+  spawned_video: ''
+),
 
-trekk2.markers.create(
-  marker_image: 'https://img.ev.mu/images/regions/91/600x400/91.jpg',
-  spawned_description: 'WOW',
-  spawned_image: '',
+trekk1.markers.create(
+  marker_image: 'https://i.ibb.co/0hVcSy2/me.jpg',
+  spawned_description: 'Adam Leseur and the Wendy Williams',
+  spawned_image: 'https://images.complex.com/complex/images/c_limit,dpr_auto,q_90,w_720/fl_lossy,pg_1/o4adpfwd3m5041chd8k5/wendy-william-sirius',
   spawned_video: ''
 )
 
-trekk2.markers.create(
-  marker_image: 'https://img.ev.mu/images/attractions/1336/600x400/1851.jpg',
-  spawned_description: 'BLOATED',
-  spawned_image: '',
-  spawned_video: ''
-)
-
-trekk3.markers.create(
-  marker_image: 'https://i.imgur.com/1jBybmE.png',
-  spawned_description: 'The Pokemon Tour',
-  spawned_image: 'https://techgirl.co.za/wp-content/uploads/2016/07/maxresdefault-1-1080x675.jpg',
-  spawned_video: ''
-)
-
-trekk3.markers.create(
-  marker_image: 'https://superawesomevectors.com/wp-content/uploads/2017/05/pikachu-pokemon-vector-800x566.jpg',
-  spawned_description: 'Pika Pi Pika',
-  spawned_image: 'https://static.pokemonpets.com/images/monsters-images-800-800/26-Raichu.png',
-  spawned_video: 'https://v.ftcdn.net/01/17/73/42/700_F_117734269_95KwuE6K0lpZZASDaqo7eNx3PhF4Y1EX_ST.mp4'
-)
-
-trekk3.markers.create(
-  marker_image: 'https://cdn.bulbagarden.net/upload/thumb/f/f9/244Entei.png/250px-244Entei.png',
-  spawned_description: '',
-  spawned_image: 'https://i0.wp.com/fanfest.com/wp-content/uploads/2017/08/Pokemon-Legendary-Beasts.png?fit=1244%2C766',
-  spawned_video: ''
-)
-
-trekk3.markers.create(
-  marker_image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Wendy_Wiliams_2019_WBLS_Interview.png/220px-Wendy_Wiliams_2019_WBLS_Interview.png',
-  spawned_description: '',
-  spawned_image: 'https://static.pokemonpets.com/images/monsters-images-800-800/26-Raichu.png',
-  spawned_video: 'https://v.ftcdn.net/01/17/73/42/700_F_117734269_95KwuE6K0lpZZASDaqo7eNx3PhF4Y1EX_ST.mp4'
-)
