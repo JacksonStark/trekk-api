@@ -83,7 +83,7 @@ trekk1.markers.create(
   spawned_description: 'Here we have Nima, lover of Kanye and turtlenecks',
   spawned_image: 'https://images.glaciermedia.ca/polopoly_fs/1.416929.1374534817!/fileImage/httpImage/image.jpg_gen/derivatives/landscape_804/img-0-6264716-jpg.jpg',
   spawned_video: ''
-),
+)
 
 trekk1.markers.create(
   marker_image: 'https://i.ibb.co/0hVcSy2/me.jpg',
