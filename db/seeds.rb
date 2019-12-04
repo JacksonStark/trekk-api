@@ -64,7 +64,7 @@ trekk1.markers.create(
   spawned_video: ''
 )
 
-trekk3.markers.create(
+trekk1.markers.create(
   marker_image: 'https://i.ibb.co/cCKYQnr/trekk-Marker4.png',
   spawned_description: "This is what we call... The Other Side. It is leased by other tech companies of many varieties.",
   spawned_image: 'https://wheretogoin.net/wp-content/uploads/2019/04/there-are-two-sides-to-every-story-e1554505904383.jpg',
